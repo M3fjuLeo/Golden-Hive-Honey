@@ -23,18 +23,14 @@ function About() {
         </div>
 
         <div className={styles.imagesContainer}>
-          <img className={styles.bg} src="public/Images/about-bg.png" alt="" />
-          <img className={styles.light} src="public/Images/light.png" alt="" />
+          <img className={styles.bg} src="/Images/about-bg.png" alt="" />
+          <img className={styles.light} src="/Images/light.png" alt="" />
           <img
             className={styles.bee}
             src="public/Images/about-bee.png"
             alt=""
           />
-          <img
-            className={styles.jar}
-            src="public/Images/about-jar.png"
-            alt=""
-          />
+          <img className={styles.jar} src="/Images/about-jar.png" alt="" />
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function MediaLink({ to, icon }) {
   return (
     <a href={to} className={styles.mediaLink}>
-      <img src="public/Images/mediaPolygon.png" alt="" />
+      <img src="/Images/mediaPolygon.png" alt="" />
       <FontAwesomeIcon icon={icon} className={styles.icon} />
     </a>
   );

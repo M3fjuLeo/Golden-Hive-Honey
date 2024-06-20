@@ -5,7 +5,7 @@ function ProductCard({ product }) {
   return (
     <div className={styles.contentContainer}>
       <div className={styles.imgContainer}>
-        <img src="public/Images/jar.png" alt="" />
+        <img src="/Images/jar.png" alt="" />
         <h3>{product.name}</h3>
       </div>
 
@@ -25,21 +25,9 @@ function ProductCard({ product }) {
           <div className={styles.sizeContainer}>
             <span>Size :</span>
             <div className={styles.jarContainer}>
-              <img
-                className={styles.jar1}
-                src="public/Images/big-jar.png"
-                alt=""
-              />
-              <img
-                className={styles.jar2}
-                src="public/Images/big-jar.png"
-                alt=""
-              />
-              <img
-                className={styles.jar3}
-                src="public/Images/big-jar.png"
-                alt=""
-              />
+              <img className={styles.jar1} src="/Images/big-jar.png" alt="" />
+              <img className={styles.jar2} src="/Images/big-jar.png" alt="" />
+              <img className={styles.jar3} src="/Images/big-jar.png" alt="" />
             </div>
           </div>
 

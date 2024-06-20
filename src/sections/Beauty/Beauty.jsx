@@ -20,11 +20,7 @@ function Beauty() {
           </div>
         </div>
 
-        <img
-          className={styles.jarImg}
-          src="public/Images/beauty-pic.svg"
-          alt=""
-        />
+        <img className={styles.jarImg} src="/Images/beauty-pic.svg" alt="" />
       </div>
     </section>
   );

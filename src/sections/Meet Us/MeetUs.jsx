@@ -22,11 +22,7 @@ function MeetUs() {
         </div>
 
         <div className={styles.videoContainer}>
-          <img
-            className={styles.img}
-            src="public/Images/video-pic.png"
-            alt=""
-          />
+          <img className={styles.img} src="/Images/video-pic.png" alt="" />
           <span className={styles.playIcon}>
             <FontAwesomeIcon className={styles.arrowIcon} icon={faPlay} />
           </span>

@@ -56,7 +56,7 @@ function Footer() {
           </div>
 
           <div className={styles.logo}>
-            <img src="public/Images/logo.png" alt="" />
+            <img src="/Images/logo.png" alt="" />
             <h3>Golden Hive Honey</h3>
           </div>
 
@@ -65,11 +65,7 @@ function Footer() {
             Copyright © 2023 Golden Hive Honey. All Rights Reserved.
           </p>
         </div>
-        <img
-          className={styles.footerImg}
-          src="public/Images/footerpic.png"
-          alt=""
-        />
+        <img className={styles.footerImg} src="/Images/footerpic.png" alt="" />
       </div>
     </section>
   );

@@ -24,7 +24,6 @@ function Navbar() {
   }, []);
 
   function handleHamburgerMenu() {
-    console.log("jebac pis");
     setHamburgerContainer((prevState) => !prevState);
   }
 
