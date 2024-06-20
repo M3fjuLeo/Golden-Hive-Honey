@@ -1,0 +1,152 @@
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30rem;
+  gap: 2rem;
+  background-color: rgba(255, 186, 65, 0.07);
+  border-radius: 3rem;
+  padding: 2rem 2rem;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgContainer img {
+  width: 10rem;
+}
+
+.descriptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.descriptionContainer p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+.aboutDescriptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.jarContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.jar1 {
+  width: 3rem;
+}
+
+.jar2 {
+  width: 2.5rem;
+}
+
+.jar3 {
+  width: 2rem;
+}
+
+h3 {
+  color: rgba(255, 249, 192, 1);
+}
+
+p {
+  color: rgba(255, 249, 192, 1);
+
+  text-transform: uppercase;
+}
+
+span {
+  color: rgba(255, 186, 65, 1);
+}
+
+.informations p {
+  text-transform: none;
+}
+
+.sizeContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.separator {
+  height: 6rem;
+  width: 1px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 186, 65, 1),
+    rgba(62, 40, 4, 0)
+  );
+}
+
+@media (min-width: 1000px) {
+  .contentContainer {
+    width: 50rem;
+    padding: 2rem;
+  }
+  .imgContainer img {
+    width: 12rem;
+  }
+  .descriptionContainer p {
+    font-size: 14px;
+    line-height: 2;
+  }
+  .contentContainer {
+    gap: 4rem;
+  }
+  .aboutDescriptionContainer {
+    padding-top: 2rem;
+  }
+  .jarContainer {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contentContainer {
+    width: 70rem;
+    flex-direction: row;
+    padding: 4rem;
+  }
+  .imgContainer img {
+    width: 15rem;
+  }
+  .descriptionContainer p {
+    font-size: 14px;
+    line-height: 2.5;
+  }
+  .aboutDescriptionContainer {
+    padding-top: 2rem;
+    justify-content: space-around;
+  }
+  .jar1 {
+    width: 3.5rem;
+  }
+
+  .jar2 {
+    width: 3rem;
+  }
+
+  .jar3 {
+    width: 2.5rem;
+  }
+}

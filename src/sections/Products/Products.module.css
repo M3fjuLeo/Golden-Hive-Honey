@@ -1,0 +1,48 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  place-items: center;
+  width: 50%;
+  padding: 8rem 0 3rem;
+}
+.container > :nth-child(3n + 1) {
+  grid-column: span 2;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1175px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

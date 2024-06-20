@@ -1,0 +1,69 @@
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 194, 75, 1);
+  gap: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+}
+
+.hamburgerMenu {
+  flex-direction: column;
+  font-size: 2rem;
+  gap: 4rem;
+}
+
+.link {
+  position: relative;
+  text-decoration: none; /* Usuń domyślne podkreślenie */
+  color: inherit; /* Dziedziczenie koloru */
+  cursor: pointer;
+  padding-bottom: 5px; /* Dodaj trochę miejsca na dolne podkreślenie */
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* Dostosuj w zależności od wymagań */
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 194, 75, 1);
+  border-radius: 50%; /* Spraw, by kropka była okrągła */
+  transition: transform 0.3s ease;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 8px; /* Odstęp między kropką a linią */
+  bottom: 0;
+  width: calc(100% - 10px); /* Dostosuj długość linii, aby uwzględnić kropkę */
+  height: 2px; /* Wysokość podkreślenia */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 194, 75, 1),
+    rgba(88, 65, 43, 0.49)
+  );
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  border-radius: 10px;
+}
+
+.link:hover::before {
+  transform: scale(1);
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

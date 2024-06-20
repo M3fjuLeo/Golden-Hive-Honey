@@ -1,0 +1,51 @@
+.separatorContianer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+.beeImg {
+  width: 7rem;
+}
+
+.title {
+  color: rgba(255, 249, 192, 1);
+  font-size: 1.6rem;
+  white-space: nowrap;
+  padding-right: 5rem;
+}
+
+.line {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 194, 75, 1),
+    rgba(11, 11, 11, 1)
+  );
+  border-radius: 2rem;
+  height: 6px;
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  .beeImg {
+    width: 10rem;
+  }
+  .separatorContianer {
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    padding-right: 8rem;
+  }
+  .beeImg {
+    width: 8rem;
+  }
+  .separatorContianer {
+    padding-left: 2rem;
+  }
+}

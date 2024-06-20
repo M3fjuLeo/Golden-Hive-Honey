@@ -1,0 +1,73 @@
+.beauty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.descriptionContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description {
+  color: rgba(255, 249, 192, 1);
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 4rem 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.jarImg {
+  width: 25rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 6rem;
+    flex-direction: row;
+  }
+  .descriptionContainer {
+    flex: 1;
+    align-items: flex-start;
+  }
+  .description {
+    text-align: start;
+  }
+  .jarImg {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .descriptionContainer {
+    flex: 3;
+  }
+  .jarImg {
+    flex: 2;
+  }
+}

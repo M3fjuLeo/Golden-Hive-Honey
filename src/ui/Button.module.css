@@ -1,0 +1,84 @@
+.button {
+  position: relative;
+}
+
+.buttonFrame {
+  display: block;
+  width: 80%;
+}
+
+.buttonText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 249, 192, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.honeycombCell {
+  transition: background-color 0.3s;
+}
+
+/* .button:hover .honeycombCell {
+  content: "";
+  width: 97%;
+  height: 11rem;
+  display: block;
+  position: absolute;
+  clip-path: polygon(
+    18% 32%,
+    83% 33%,
+    100% 47%,
+    100% 53%,
+    83% 68%,
+    18% 68%,
+    0 51%,
+    0 49%
+  );
+  z-index: -5;
+  background-color: rgba(242, 187, 90, 0.1);
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+} */
+
+@media (min-width: 620px) {
+  .buttonFrame {
+    width: 100%;
+  }
+  .buttonText {
+    transform: translate(-50%, -50%);
+  }
+  .button:hover .honeycombCell {
+    content: "";
+    width: 97%;
+    height: 11rem;
+    display: block;
+    position: absolute;
+    clip-path: polygon(
+      18% 32%,
+      83% 33%,
+      100% 47%,
+      100% 53%,
+      83% 68%,
+      18% 68%,
+      0 51%,
+      0 49%
+    );
+    z-index: -5;
+    background-color: rgba(242, 187, 90, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
