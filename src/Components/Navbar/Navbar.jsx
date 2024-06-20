@@ -46,11 +46,7 @@ function Navbar() {
             <Button text="Menu" onClick={handleHamburgerMenu} />
           ) : (
             <div className={styles.frameDiv}>
-              <img
-                className={styles.frame}
-                src="public/Images/frame.png"
-                alt=""
-              />
+              <img className={styles.frame} src="/Images/frame.png" alt="" />
               <Ul />
             </div>
           )}
