@@ -22,7 +22,7 @@
 }
 
 .dot {
-  background-image: url("public/Images/SliderDot.png");
+  background-image: url("/Images/SliderDot.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 2rem;
@@ -31,7 +31,7 @@
 }
 
 .activeDot {
-  background-image: url("public/Images/SliderActiveDot.png");
+  background-image: url("/Images/SliderActiveDot.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 2rem;
